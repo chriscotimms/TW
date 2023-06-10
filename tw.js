@@ -1,17 +1,13 @@
 var name = document.getElementById("a");
 var work = document.getElementById("b");
 var workSub = document.getElementsByClassName("d");
-var i;
-
 
 
 function change() {
 for (i = 0; i < workSub.length; i++) {
     let content = workSub[i];
-   
-      content.classList.toggle("active");
-      
-      if (content.style.display === "grid") {
+    content.classList.toggle("active");
+    if (content.style.display === "grid") {
         content.style.display = "none";
       } else {
         content.style.display = "grid";
