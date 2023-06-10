@@ -1,5 +1,6 @@
-var name = document.getElementById("a");
+var nameinfo = document.getElementById("a");
 var work = document.getElementById("b");
+var nameinfoContent = document.getElementById("c");
 var workSub = document.getElementsByClassName("d");
 
 
@@ -15,7 +16,19 @@ for (i = 0; i < workSub.length; i++) {
   }
 };
 
+function change2() {
+    nameinfoContent.classList.toggle("active");
+        if (nameinfoContent.style.display === "grid") {
+            nameinfoContent.style.display = "none";
+          } else {
+            nameinfoContent.style.display = "grid";
+          }
+    };
+
 work.addEventListener("click", change, false);
+nameinfo.addEventListener("click", change2, false);
+
+
 
 /*
 for (i = 0; i < coll.length; i++) {
